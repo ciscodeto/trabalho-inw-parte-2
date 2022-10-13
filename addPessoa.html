@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Pessoa</title>
+    <script src="./js/gerais.js"></script>
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+    <link rel="stylesheet" href="./css/gerais.css">
+</head>
+<body>
+    <div id="containerAdd">
+        <form action="#">
+            <h2>Email</h2>
+            <label for="iEmail">Email: </label>
+            <input type="text" id="iEmail" placeholder="Informe o email">
+            <footer>
+                <button onclick="esconderContainer()">Cancelar</button>
+                <button>Cadastrar</button>
+            </footer>
+        </form>
+    </div>
+    <div id="containerAdd2">
+        <form action="#">
+            <h2>Telefone</h2>
+            <label for="iTelefone">Telefone: </label>
+            <input type="text" id="iTelefone" placeholder="Informe o telefone">
+            <footer>
+                <button onclick="esconderContainer2()">Cancelar</button>
+                <button>Cadastrar</button>
+            </footer>
+        </form>
+    </div>
+    <main>
+        <a href="./index.html" class="voltar">
+            <img src="./img/icone-voltar.svg" alt="Seta para esquerda - Voltar ao home">
+        </a>
+        <header>
+            <h1>Cadastrar Pessoa</h1>
+        </header>
+        <article>
+            <form action="#">
+                <label for="iCpf">CPF: </label>
+                <input id="iCpf" type="text" placeholder="Informe o CPF" required>
+                <label for="iNome">Nome: </label>
+                <input id="iNome" type="text" placeholder="Informe o nome" required>
+                <label for="iNumero">Numero: </label>
+                <input id="iNumero" type="text" placeholder="Informe o numero">
+                <label for="iCep">CEP: </label>
+                <input id="iCep" type="text" placeholder="Informe o CEP" required>
+                <label for="iDataNasc">Data de nascimento: </label>
+                <input id="iDataNasc" type="date" placeholder="Informe a data de nascimento" required>
+                <label for="iProfissao">Profissao: </label>
+                <input id="iProfissao" type="text" placeholder="Informe a sua profissao" required>
+                <div>
+                    <h3>Emails: </h3>
+                    <button onclick="mostrarContainer()">
+                        + Email
+                    </button>
+                </div>
+                <ol>
+                    <li>email1@gmail.com</li>
+                    <li>email2@gmail.com</li>
+                    <li>email3@gmail.com</li>
+                    <li>email4@gmail.com</li>
+                </ol>
+                <br><br>
+                <div>
+                    <h3>Telefone: </h3>
+                    <button onclick="mostrarContainer2()">
+                        + Telefone
+                    </button>
+                </div>
+                <ol>
+                    <li>Nenhum telefone cadastrado!</li>
+                </ol>
+                <footer>
+                    <button>Cancelar</button>
+                    <button>Cadastrar</button>
+                </footer>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

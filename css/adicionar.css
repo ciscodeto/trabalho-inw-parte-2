@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #181818;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+main header h1{
+    margin: 20px 0;
+}
+
+main article {
+    background-color: #414141;
+    width: 70%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+main article form{
+    background-color: #414141;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+main article form input, main article form select{
+    margin: 0 0 15px 0;
+    height: 40px;
+    padding: 0 15px;
+}
+
+main article form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+main article form div button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+main article form div button:hover{
+    transition: 0.5s;
+    color: rgb(228, 228, 228);
+    transform: scale(1.2);
+}
+
+main article form ol li{
+    margin-left: 40px;
+}
+
+main article form footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main article form footer button{
+    margin: 20px 0;
+}
+main article form footer button:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6060;
+    transition: 0.5s;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+main article form footer button:first-child:hover{
+    background-color: rgb(214, 64, 64);;
+    transition: 0.5s;
+}
+main article form footer button:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #69cc6e;
+    transition: 0.5s;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+main article form footer button:last-child:hover{
+    background-color: rgb(133, 236, 119);;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 450px) {
+    main article{
+        width: 100%;
+        border-radius: 0;
+    }
+    main article div{
+        width: calc(100% - 50px);
+        border-radius: 0;
+    }
+    main article form footer button{
+        margin: 20px 10px;
+        flex: 1;
+    }
+    h1{
+        margin-top: 70px !important;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}

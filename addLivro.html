@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Livro</title>
+    <script src="./js/gerais.js"></script>
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+    <link rel="stylesheet" href="./css/gerais.css">
+</head>
+<body>
+    <div id="containerAdd">
+        <form action="#">
+            <h2>Autor</h2>
+            <label for="iNome">Nome: </label>
+            <input type="text" id="iNome" placeholder="Informe o nome do autor">
+            <footer>
+                <button onclick="esconderContainer()">Cancelar</button>
+                <button>Cadastrar</button>
+            </footer>
+        </form>
+    </div>
+    <main>
+        <a href="./index.html" class="voltar">
+            <img src="./img/icone-voltar.svg" alt="Seta para esquerda - Voltar ao home">
+        </a>
+        <header>
+            <h1>Cadastrar Livro</h1>
+        </header>
+        <article>
+            <form action="#">
+                <label for="iIsbn">ISBN: </label>
+                <input id="iIsbn" type="text" placeholder="Informe o ISBN" required>
+                <label for="iTitulo">Titulo: </label>
+                <input id="iTitulo" type="text" placeholder="Informe o titulo" required>
+                <label for="iGenero">Genero: </label>
+                <select name="iGenero" id="iGenero" required>
+                    <option value="aventura">Aventura</option>
+                    <option value="acao">Ação</option>
+                    <option value="terror">Terror</option>
+                    <option value="suspense">Suspense</option>
+                </select>
+                <label for="iNumeroPaginas">N° Paginas: </label>
+                <input id="iNumeroPaginas" type="number" placeholder="Informe a quantidade de paginas" required>
+                <div>
+                    <h3>Autores: </h3>
+                    <button onclick="mostrarContainer()">
+                        + Autor
+                    </button>
+                </div>
+                <ol>
+                    <li>Juliana Almeida</li>
+                </ol>
+                <footer>
+                    <button>Cancelar</button>
+                    <button>Cadastrar</button>
+                </footer>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

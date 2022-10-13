@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@100;400&family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap');
+
+p, h1, h2, h3, a, tr td, tr th, label, ul li, ol li, button {
+    font-family: 'Roboto', sans-serif;
+}

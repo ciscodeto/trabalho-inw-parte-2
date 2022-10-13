@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script src="./js/gerais.js"></script>
+    <link rel="stylesheet" href="./css/listagem.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>BookFlix</h1>
+            <nav>
+                <a href="./relatorios.html">Relatorios</a>
+                <a href="./pessoas.html">Pessoas</a>
+                <a href="./index.html">Livros</a>
+                <a href="./emprestimos.html">Emprestimos</a>
+                <a href="#sair">Sair</a>
+            </nav>
+        </header>
+        <article>
+            <h2>Livros</h2>
+            <div>
+                <div>
+                    <form action="#">
+                        <div>
+                            <label for="iPesquisa">ISBN:</label>
+                            <input id="iPesquisa" type="text" placeholder="Pesquisar">
+                        </div>
+                        <button>
+                            <img src="./img/pesquisa.png" alt="Imagem de pesquisa">
+                        </button>
+                        <a href="./addLivro.html">+ Adicionar</a>
+                    </form>
+                </div>
+                <div class="tabelaListagem">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Titulo</th>
+                                <th>Genero</th>
+                                <th>Autores</th>
+                                <th>N° Paginas</th>
+                                <th>Acoes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="impar">
+                                <td>978-3-16-148410-0</td>
+                                <td>O pequeno principe</td>
+                                <td>Fabula</td>
+                                <td>Antoine de Saint-Exupéry</td>
+                                <td>96</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="par">
+                                <td>978-3-16-148410-3</td>
+                                <td>O poder do silencio</td>
+                                <td>Autoajuda</td>
+                                <td>Eckhart Tolle</td>
+                                <td>108</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="impar">
+                                <td>978-3-16-148123-9</td>
+                                <td>O alquimista</td>
+                                <td>Drama</td>
+                                <td>Paulo Coelho</td>
+                                <td>222</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Emprestimo</title>
+    <script src="./js/gerais.js"></script>
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+    <link rel="stylesheet" href="./css/gerais.css">
+</head>
+<body>
+    <main>
+        <a href="./index.html" class="voltar">
+            <img src="./img/icone-voltar.svg" alt="Seta para esquerda - Voltar ao home">
+        </a>
+        <header>
+            <h1>Cadastrar Emprestimo</h1>
+        </header>
+        <article>
+            <form action="#">
+                <label for="iCpfPessoa">CPF Pessoa: </label>
+                <input id="iCpfPessoa" type="text" placeholder="Informe o CPF da pessoa" required>
+                <label for="iIsbnLivro">ISBN Livro: </label>
+                <input id="iIsbnLivro" type="text" placeholder="Informe o ISBN do livro" required>
+                <label for="iDataRetirada">Data de retirada: </label>
+                <input id="iDataRetirada" type="date" placeholder="Informe a data de retirada" required>
+                <label for="iDataEntraga">Data de entrega: </label>
+                <input id="iDataEntraga" type="date" placeholder="Informe a data de entrega" required>
+                <label for="iMulta">Valor da multa por atraso: </label>
+                <input id="iMulta" type="text" placeholder="Informe o valor da multa por atraso" required>
+                <footer>
+                    <button>Cancelar</button>
+                    <button>Cadastrar</button>
+                </footer>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

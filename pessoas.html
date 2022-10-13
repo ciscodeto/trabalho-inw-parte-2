@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoas</title>
+    <script src="./js/gerais.js"></script>
+    <link rel="stylesheet" href="./css/listagem.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>BookFlix</h1>
+            <nav>
+                <a href="./relatorios.html">Relatorios</a>
+                <a href="./pessoas.html">Pessoas</a>
+                <a href="./index.html">Livros</a>
+                <a href="./emprestimos.html">Emprestimos</a>
+                <a href="#sair">Sair</a>
+            </nav>
+        </header>
+        <article>
+            <h2>Pessoas</h2>
+            <div>
+                <div>
+                    <form action="#">
+                        <div>
+                            <label for="iPesquisa">CPF:</label>
+                            <input id="iPesquisa" type="text" placeholder="Pesquisar">
+                        </div>
+                        <button>
+                            <img src="./img/pesquisa.png" alt="Imagem de pesquisa">
+                        </button>
+                        <a href="./addPessoa.html">+ Adicionar</a>
+                    </form>
+                </div>
+                <div class="tabelaListagem">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CPF</th>
+                                <th>Nome</th>
+                                <th>Rua</th>
+                                <th>Numero</th>
+                                <th>CEP</th>
+                                <th>Data nascimento</th>
+                                <th>Profissao</th>
+                                <th>Emails</th>
+                                <th>Telefones</th>
+                                <th>Acoes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="par">
+                                <td>746.524.229-03</td>
+                                <td>Aline Sueli Laura Galvão</td>
+                                <td>Rua Luciano Monteiro Sobral</td>
+                                <td>363</td>
+                                <td>49048-383</td>
+                                <td>03/09/1997</td>
+                                <td>Bombeiro</td>
+                                <td>aline.sueli.galvao@flama.biz</td>
+                                <td>(79) 99895-1484</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>374.044.385-51</td>
+                                <td>Cláudia Marlene Fernandes</td>
+                                <td>Caminho 10-Quadra A</td>
+                                <td>646</td>
+                                <td>41339-086</td>
+                                <td>05/01/1959</td>
+                                <td>Engenheiro</td>
+                                <td>claudia.marlene.fernandes@hotmal.com</td>
+                                <td>(71) 98302-7581</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>415.818.381-23</td>
+                                <td>Josefa Patrícia Sabrina Barros</td>
+                                <td>Rua Marcelino Parzianello</td>
+                                <td>548</td>
+                                <td>85508-320</td>
+                                <td>23/02/2001</td>
+                                <td>Arquiteto</td>
+                                <td>josefa.patricia.barros@otlokk.com</td>
+                                <td>(46) 99871-1163</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>777.358.999-20</td>
+                                <td>Larissa Kamilly Brenda Alves</td>
+                                <td>Avenida Arino Gomes Leal</td>
+                                <td>350</td>
+                                <td>29700-558</td>
+                                <td>13/05/2003</td>
+                                <td>Jogador</td>
+                                <td>larissa-alves93@rocketmail.com</td>
+                                <td>(27) 98377-1254</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>609.498.394-77</td>
+                                <td>Luana Jennifer Lopes</td>
+                                <td>Rua Hayel Bon Faker</td>
+                                <td>357</td>
+                                <td>79806-000</td>
+                                <td>13/04/1960</td>
+                                <td>Empresaria</td>
+                                <td>luana-lopes89@editorazap.com.br</td>
+                                <td>(67) 99571-6148</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>171.808.114-67</td>
+                                <td>Diogo Anthony Rocha</td>
+                                <td>Rua Jamil Pontes</td>
+                                <td>263</td>
+                                <td>76900-694</td>
+                                <td>27/08/1971</td>
+                                <td>Desempregado</td>
+                                <td>diogo-rocha70@peopleside.com.br</td>
+                                <td>(69) 98918-7799</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>835.173.611-27</td>
+                                <td>Cláudio Calebe Castro</td>
+                                <td>Rua Nísia Santiago</td>
+                                <td>769</td>
+                                <td>59614-150</td>
+                                <td>06/01/1963</td>
+                                <td>Jogador</td>
+                                <td>claudio_calebe_castro@liv.com</td>
+                                <td>(84) 99780-2892</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>093.021.170-73</td>
+                                <td>Louise Milena Silva</td>
+                                <td>Rua Valença</td>
+                                <td>490</td>
+                                <td>76808-410</td>
+                                <td>05/09/1971</td>
+                                <td>Bombeiro</td>
+                                <td>louise_milena_silva@moderna.com.br</td>
+                                <td>(69) 99261-6062</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>495.517.393-45</td>
+                                <td>Henrique Osvaldo Marcelo Bernardes</td>
+                                <td>Rua Sérgio Luiz Costa</td>
+                                <td>171</td>
+                                <td>88359-008</td>
+                                <td>17/04/1957</td>
+                                <td>Bombeiro</td>
+                                <td>henrique_bernardes@elimco.com</td>
+                                <td>(47) 99805-8069</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>400.893.705-62</td>
+                                <td>Caleb Paulo Lima</td>
+                                <td>Vila Waldemar Falcão</td>
+                                <td>408</td>
+                                <td>60336-000</td>
+                                <td>03/07/1989</td>
+                                <td>Bombeiro</td>
+                                <td>caleb_lima@madhause.com.br</td>
+                                <td>(85) 98746-2070</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>313.791.552-07</td>
+                                <td>César Leandro Daniel Nunes</td>
+                                <td>Rua Rafael Balzani</td>
+                                <td>272</td>
+                                <td>07020-091</td>
+                                <td>11/05/1945</td>
+                                <td>Engenheiro</td>
+                                <td>cesar_leandro_nunes@ig.com</td>
+                                <td>(11) 99522-2836</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>923.101.581-86</td>
+                                <td>Agatha Fátima Regina Santos</td>
+                                <td>Rua Crisântemos</td>
+                                <td>379</td>
+                                <td>69088-180</td>
+                                <td>12/08/1955</td>
+                                <td>Bombeiro</td>
+                                <td>agatha_fatima_santos@gvmail.br</td>
+                                <td>(92) 98487-8707</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>733.948.833-25</td>
+                                <td>Laís Jéssica Porto</td>
+                                <td>Vila Maria Teles</td>
+                                <td>999</td>
+                                <td>60337-150</td>
+                                <td>22/01/1976</td>
+                                <td>Jogador</td>
+                                <td>lais-porto95@abcautoservice.net</td>
+                                <td>(85) 98531-1411</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>850.375.520-36</td>
+                                <td>Benedito Fábio Costa</td>
+                                <td>Rua da Paz</td>
+                                <td>977</td>
+                                <td>69918-352</td>
+                                <td>21/08/1963</td>
+                                <td>Pedreiro</td>
+                                <td>benedito_fabio_costa@bessa.net.br</td>
+                                <td>(68) 99834-4656</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>319.329.035-18</td>
+                                <td>João Pedro Henrique Duarte</td>
+                                <td>1ª Travessa Rodrigo Otávio</td>
+                                <td>713</td>
+                                <td>65609-280</td>
+                                <td>17/02/1971</td>
+                                <td>Faxineiro</td>
+                                <td>joaopedroduarte@dpi.indl.com.br</td>
+                                <td>(99) 99785-6852</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>076.936.879-47</td>
+                                <td>Clarice Maya Priscila Oliveira</td>
+                                <td>Rua Três</td>
+                                <td>923</td>
+                                <td>65072-150</td>
+                                <td>11/06/1946</td>
+                                <td>Bombeiro</td>
+                                <td>clarice-oliveira98@ozzape.com</td>
+                                <td>(98) 98314-5998</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>225.891.355-13</td>
+                                <td>Victor Benjamin Mendes</td>
+                                <td>Rua Concepta Araújo Figueiredo</td>
+                                <td>685</td>
+                                <td>88080-260</td>
+                                <td>24/03/1985</td>
+                                <td>Desempregado</td>
+                                <td>victorbenjaminmendes@amordeconvite.com.br</td>
+                                <td>(48) 99927-5462</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>692.707.520-89</td>
+                                <td>Sophia Bárbara Sônia Fogaça</td>
+                                <td>Rua Monsenhor Luiz Barbosa</td>
+                                <td>606</td>
+                                <td>57010-618</td>
+                                <td>23/04/1970</td>
+                                <td>Desempregado</td>
+                                <td>sophia.barbara.fogaca@life.com</td>
+                                <td>(82) 99354-3999</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>438.800.737-40</td>
+                                <td>Ayla Gabrielly Lívia Ferreira</td>
+                                <td>Rua São José I</td>
+                                <td>630</td>
+                                <td>69912-050</td>
+                                <td>06/09/1993</td>
+                                <td>Desempregado</td>
+                                <td>aylagabriellyferreira@hmhabitacoesmodernas.com.br</td>
+                                <td>(68) 98502-7330</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>623.905.445-33</td>
+                                <td>Isabelle Cristiane Priscila Viana</td>
+                                <td>Avenida dos Curiós</td>
+                                <td>987</td>
+                                <td>65095-460</td>
+                                <td>24/05/1968</td>
+                                <td>Desempregado</td>
+                                <td>isabelle_viana@tintasvalecores.com.br</td>
+                                <td>(98) 98777-5276</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>888.353.455-70</td>
+                                <td>Luís Iago Pinto</td>
+                                <td>Rua Dilermando Reis</td>
+                                <td>913</td>
+                                <td>85904-370</td>
+                                <td>16/04/1996</td>
+                                <td>Desempregado</td>
+                                <td>luis_iago_pinto@grupoaguaviva.com.br</td>
+                                <td>(45) 98128-7009</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>199.848.895-05</td>
+                                <td>Benedito Alexandre Rodrigues</td>
+                                <td>Rua São Pedro</td>
+                                <td>225</td>
+                                <td>29157-877</td>
+                                <td>01/09/1974</td>
+                                <td>Desempregado</td>
+                                <td>beneditoalexandrerodrigues@sebrace.com.br</td>
+                                <td>(27) 99557-1039</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>474.207.413-01</td>
+                                <td>Carlos Eduardo Nathan Almada</td>
+                                <td>Avenida São José do Norte</td>
+                                <td>508</td>
+                                <td>91712-052</td>
+                                <td>23/05/2003</td>
+                                <td>Desempregado</td>
+                                <td>carlos_eduardo_almada@aspxsistemas.com.com.br</td>
+                                <td>(51) 98391-9220</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>198.780.761-80</td>
+                                <td>Benedito Breno Bernardo Baptista</td>
+                                <td>Rua Domingos Luiz Delpuppo</td>
+                                <td>506</td>
+                                <td>29194-040</td>
+                                <td>11/04/1958</td>
+                                <td>Desempregado</td>
+                                <td>benedito_baptista@fixacomunicacao.com.br</td>
+                                <td>(27) 99225-7202</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>186.312.603-12</td>
+                                <td>Gabriel Benício Ricardo da Mota</td>
+                                <td>Rua Belém</td>
+                                <td>433</td>
+                                <td>69035-000</td>
+                                <td>06/03/2002</td>
+                                <td>Desempregado</td>
+                                <td>gabriel_damota@technew.ind.br</td>
+                                <td>(92) 98533-0857</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>190.855.195-00</td>
+                                <td>Luís Luan da Silva</td>
+                                <td>Avenida Prefeito Severino Bezerra Cabral</td>
+                                <td>946</td>
+                                <td>58410-185</td>
+                                <td>04/01/1976</td>
+                                <td>Desempregado</td>
+                                <td>luisluandasilva@lordello.com.br</td>
+                                <td>(83) 98376-0945</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>183.492.264-04</td>
+                                <td>Victor Gael Julio Vieira</td>
+                                <td>Rua Mário de Andrade</td>
+                                <td>703</td>
+                                <td>95057-470</td>
+                                <td>02/09/1999</td>
+                                <td>Desempregado</td>
+                                <td>victor-vieira90@sefaz.am.gov.br</td>
+                                <td>(54) 98514-6993</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>314.115.704-99</td>
+                                <td>Isabella Aurora Hadassa da Paz</td>
+                                <td>Avenida Pequeno Saldanha</td>
+                                <td>334</td>
+                                <td>40255-115</td>
+                                <td>05/09/2002</td>
+                                <td>Desempregado</td>
+                                <td>isabella.aurora.dapaz@holtmail.com</td>
+                                <td>(71) 98698-0523</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="par">
+                                <td>076.710.266-54</td>
+                                <td>Renato Henrique Rafael da Conceição</td>
+                                <td>Rua João Aquino</td>
+                                <td>822</td>
+                                <td>85862-507</td>
+                                <td>05/06/1979</td>
+                                <td>Desempregado</td>
+                                <td>renato_henrique_daconceicao@gmailo.com</td>
+                                <td>(45) 98430-8819</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                            <tr class="impar">
+                                <td>914.856.186-06</td>
+                                <td>Pedro Benício Araújo</td>
+                                <td>Quadra SHDB QL 32 Conjunto 18</td>
+                                <td>158</td>
+                                <td>71676-190</td>
+                                <td>23/01/1952</td>
+                                <td>Desempregado</td>
+                                <td>pedrobenicioaraujo@giltelhas.com.br</td>
+                                <td>(61) 98126-8661</td>
+                                <td>
+                                    <button>
+                                        <img src="./img/Icone-editar-branco.svg" alt="Lapis - edicao">
+                                    </button>
+                                    <button>
+                                        <img src="./img/Icone-deletar.svg" alt="Lixeira - deletar">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

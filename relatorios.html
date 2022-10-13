@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatorios</title>
+    <link rel="stylesheet" href="./css/listagem.css" />
+    <link rel="stylesheet" href="./css/gerais.css" />
+    <link rel="stylesheet" href="./css/fontes.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>BookFlix</h1>
+        <nav>
+            <a href="./relatorios.html">Relatorios</a>
+            <a href="./pessoas.html">Pessoas</a>
+            <a href="./index.html">Livros</a>
+            <a href="./emprestimos.html">Emprestimos</a>
+            <a href="#sair">Sair</a>
+        </nav>
+      </header>
+      <article>
+        <h2>Relatórios</h2>
+        <br><br><br><br><br>
+        <h3>Pessoas</h3>
+        <br>
+        <div>
+          <div>
+            <form action="#">
+              <div>
+                <label for="iQtdTel">Quantidade de telefones:</label>
+                <input id="iQtdTel" type="text" placeholder="Pesquisar" />
+              </div>
+              <button>
+                <img src="./img/pesquisa.png" alt="Imagem de pesquisa" />
+              </button>
+            </form>
+          </div>
+          <div class="tabelaListagem" style="overflow-y:auto; max-height: 200px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>CPF</th>
+                  <th>Nome</th>
+                  <th>Rua</th>
+                  <th>Numero</th>
+                  <th>CEP</th>
+                  <th>Data nascimento</th>
+                  <th>Profissao</th>
+                  <th>Emails</th>
+                  <th>Telefones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="impar">
+                  <td>746.524.229-03</td>
+                  <td>Aline Sueli Laura Galvão</td>
+                  <td>Rua Luciano Monteiro Sobral</td>
+                  <td>363</td>
+                  <td>49048-383</td>
+                  <td>03/09/1997</td>
+                  <td>Bombeiro</td>
+                  <td>aline.sueli.galvao@flama.biz</td>
+                  <td>(79) 99895-1484</td>
+                </tr>
+                <tr class="par">
+                  <td>374.044.385-51</td>
+                  <td>Cláudia Marlene Fernandes</td>
+                  <td>Caminho 10-Quadra A</td>
+                  <td>646</td>
+                  <td>41339-086</td>
+                  <td>05/01/1959</td>
+                  <td>Engenheiro</td>
+                  <td>claudia.marlene.fernandes@hotmal.com</td>
+                  <td>(71) 98302-7581</td>
+                </tr>
+                <tr class="impar">
+                  <td>777.358.999-20</td>
+                  <td>Larissa Kamilly Brenda Alves</td>
+                  <td>Avenida Arino Gomes Leal</td>
+                  <td>350</td>
+                  <td>29700-558</td>
+                  <td>13/05/2003</td>
+                  <td>Jogador</td>
+                  <td>larissa-alves93@rocketmail.com</td>
+                  <td>(27) 98377-1254</td>
+                </tr>
+                <tr class="par">
+                  <td>609.498.394-77</td>
+                  <td>Luana Jennifer Lopes</td>
+                  <td>Rua Hayel Bon Faker</td>
+                  <td>357</td>
+                  <td>79806-000</td>
+                  <td>13/04/1960</td>
+                  <td>Empresaria</td>
+                  <td>luana-lopes89@editorazap.com.br</td>
+                  <td>(67) 99571-6148</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <br><br><br><br><br>
+        <h3>Livros</h3>
+        <br>
+        <div>
+          <div>
+            <form action="#">
+              <div>
+                <label for="iAutor">Autor:</label>
+                <input id="iAutor" type="text" placeholder="Pesquisar" />
+              </div>
+              <button>
+                <img src="./img/pesquisa.png" alt="Imagem de pesquisa" />
+              </button>
+            </form>
+          </div>
+          <div class="tabelaListagem" style="overflow-y:auto; max-height: 200px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>ISBN</th>
+                  <th>Titulo</th>
+                  <th>Genero</th>
+                  <th>Autores</th>
+                  <th>Páginas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="impar">
+                  <td>978-3-16-148123-9</td>
+                  <td>O alquimista</td>
+                  <td>Drama</td>
+                  <td>Paulo Coelho</td>
+                  <td>222</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <br><br><br><br><br>
+        <h3>Empréstimos</h3>
+        <br>
+        <div>
+          <div>
+            <form action="#">
+              <div>
+                <label for="iDataInicial">Data inicial:</label>
+                <input id="iDataInicial" type="text" placeholder="Data de retirada">
+              </div>
+              <div>
+                <label for="iDataFinal">Data final:</label>
+                <input id="iDataFinal" type="text" placeholder="Data de retirada">
+              </div>
+              <button>
+                <img src="./img/pesquisa.png" alt="Imagem de pesquisa" />
+              </button>
+            </form>
+          </div>
+          <div class="tabelaListagem" style="overflow-y:auto; max-height: 200px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>CPF da pessoa</th>
+                  <th>Nome da pessoa</th>
+                  <th>ISBN do livro</th>
+                  <th>Titulo do livro</th>
+                  <th>Data de retirada</th>
+                  <th>Data de devolução</th>
+                  <th>Valor diaria da multa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="impar">
+                  <td>746.524.229-03</td>
+                  <td>Aline Sueli Laura Galvão</td>
+                  <td>978-3-16-148410-0</td>
+                  <td>O pequeno principe</td>
+                  <td>26/08/2019</td>
+                  <td>26/09/2019</td>
+                  <td>R$7,50</td>
+                </tr>
+                <tr class="par">
+                  <td>746.524.229-03</td>
+                  <td>Aline Sueli Laura Galvão</td>
+                  <td>978-3-16-148123-9</td>
+                  <td>O alquimista</td>
+                  <td>26/08/2019</td>
+                  <td>26/09/2019</td>
+                  <td>R$7,50</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        </article>
+    </main>
+  </body>
+</html>
