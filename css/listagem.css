@@ -4,7 +4,7 @@
 }
 
 main {
-    background-color: #181818;
+    /* background-color: #181818; */
     color: white;
     min-height: 100vh;
     width: 100%;
@@ -30,6 +30,11 @@ main header nav{
     width: 70%;
     margin: 50px 0;
 }
+main header nav a img{
+    height: 25px;
+    width: 25px;
+    margin: 0 5px;
+}
 main header nav a{
     flex: 1;
     padding: 10px 15px;
@@ -43,6 +48,9 @@ main header nav a{
     transition: 0.5s;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main header nav a:hover{
     transition: 0.5s;
@@ -165,7 +173,7 @@ table tbody tr td button:last-child:hover{
     background-color: rgb(214, 64, 64);
     transition: 0.5s;
 }
-table tbody tr:hover td:not(tbody tr td:last-child){
+table tbody tr:hover td{
     transition: 0.2s;
     font-weight: bolder;
     transform: scale(1.1);

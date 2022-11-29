@@ -81,3 +81,10 @@
     transition: 0.5s;
     transform: scale(1.2);
 }
+
+body{
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
